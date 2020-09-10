@@ -8392,11 +8392,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\FCA-Boilerplate-WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\FCA-Boilerplate-WebApi.csproj",
       "projectName": "FCA-Boilerplate-WebApi",
-      "projectPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\FCA-Boilerplate-WebApi.csproj",
+      "projectPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\FCA-Boilerplate-WebApi.csproj",
       "packagesPath": "C:\\Users\\v.vinicius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\obj\\",
+      "outputPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
