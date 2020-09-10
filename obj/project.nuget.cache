@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A2g1fBaeJAQDKfqugMAqxvvs+MhdlVGq43FSVkiDALizTjwhTMX69oXqYTJMxzfSEAgkuu+k2alKwR7sU6NgVw==",
+  "dgSpecHash": "1lHt/MVmAfo69417X3c5emmVboCXdPjZzqXoqkiXWpTerCBhkUwb27AZVi8dLh2XHPBW50w+6almlTM2l0StUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\FCA-Boilerplate-WebApi.csproj",
+  "projectFilePath": "C:\\Users\\v.vinicius\\Repos\\FCA-LoginSPD-WebAPI\\app\\FCA-Login-WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

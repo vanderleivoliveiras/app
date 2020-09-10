@@ -7102,7 +7102,6 @@
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8392,11 +8391,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\FCA-Boilerplate-WebApi.csproj",
-      "projectName": "FCA-Boilerplate-WebApi",
-      "projectPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\FCA-Boilerplate-WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\v.vinicius\\Repos\\FCA-LoginSPD-WebAPI\\app\\FCA-Login-WebApi.csproj",
+      "projectName": "FCA-Login-WebApi",
+      "projectPath": "C:\\Users\\v.vinicius\\Repos\\FCA-LoginSPD-WebAPI\\app\\FCA-Login-WebApi.csproj",
       "packagesPath": "C:\\Users\\v.vinicius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\v.vinicius\\Repos\\FCA-Boilerplate-WebApi\\app\\obj\\",
+      "outputPath": "C:\\Users\\v.vinicius\\Repos\\FCA-LoginSPD-WebAPI\\app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

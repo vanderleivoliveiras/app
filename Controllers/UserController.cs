@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using FCA_Boilerplate_WebApi.Models;
+using FCA_Login_WebApi.Models;
 
-namespace FCA_Boilerplate_WebApi.Controllers
+namespace FCA_Login_WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

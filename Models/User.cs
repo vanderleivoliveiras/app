@@ -1,4 +1,4 @@
-namespace FCA_Boilerplate_WebApi.Models
+namespace FCA_Login_WebApi.Models
 {
     public class User
     {   

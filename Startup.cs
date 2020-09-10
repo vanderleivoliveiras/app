@@ -1,4 +1,4 @@
-using FCA_Boilerplate_WebApi.Models;
+using FCA_Login_WebApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FCA_Boilerplate_WebApi
+namespace FCA_Login_WebApi
 {
     public class Startup
     {

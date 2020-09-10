@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace FCA_Boilerplate_WebApi
+namespace FCA_Login_WebApi
 {
     public class Program
     {

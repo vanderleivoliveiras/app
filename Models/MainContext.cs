@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using FCA_Boilerplate_WebApi.Models;
+using FCA_Login_WebApi.Models;
 
-namespace FCA_Boilerplate_WebApi.Models
+namespace FCA_Login_WebApi.Models
 {
     public class MainContext : DbContext
     {
@@ -12,6 +12,6 @@ namespace FCA_Boilerplate_WebApi.Models
 
         public DbSet<User> Users { get; set; }
         public DbSet<AuthUser> AuthUsers { get; set; }
-        public DbSet<FCA_Boilerplate_WebApi.Models.AuthUser> AuthUser { get; set; }
+        public DbSet<FCA_Login_WebApi.Models.AuthUser> AuthUser { get; set; }
     }
 }

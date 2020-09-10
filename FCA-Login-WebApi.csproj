@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>FCA_Boilerplate_WebApi</RootNamespace>
+    <RootNamespace>FCA_Login_WebApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

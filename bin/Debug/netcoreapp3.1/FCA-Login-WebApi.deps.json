@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "FCA-Boilerplate-WebApi/1.0.0": {
+      "FCA-Login-WebApi/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.8",
           "Microsoft.EntityFrameworkCore.InMemory": "3.1.8",
@@ -299,10 +299,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "FCA-Boilerplate-WebApi.dll": {}
+          "FCA-Login-WebApi.dll": {}
         },
         "compile": {
-          "FCA-Boilerplate-WebApi.dll": {}
+          "FCA-Login-WebApi.dll": {}
         }
       },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -3825,7 +3825,7 @@
     }
   },
   "libraries": {
-    "FCA-Boilerplate-WebApi/1.0.0": {
+    "FCA-Login-WebApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
