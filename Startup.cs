@@ -21,7 +21,7 @@ namespace FCA_Boilerplate_WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MainContext>(opt =>
-               opt.UseInMemoryDatabase("TodoList"));
+               opt.UseInMemoryDatabase("LoginSPD"));
             services.AddControllers();
         }
 
@@ -32,6 +32,9 @@ namespace FCA_Boilerplate_WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseHttpsRedirection();
 
