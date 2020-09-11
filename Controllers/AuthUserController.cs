@@ -118,9 +118,9 @@ namespace FCA_Login_WebApi.Controllers
 
 
          // GET: api/auth
-         [Route("auth")]
+        [Route("getUserInformationFromToken")]
         [HttpGet]
-        public async Task<HttpResponseMessage> Auth()
+        public async Task<HttpResponseMessage> GetUserInformationFromToken()
         {
             client.BaseAddress = new Uri("http://security-master-internal.digital.fcalatam.com.br/");
             client.DefaultRequestHeaders.Accept.Clear();
@@ -130,7 +130,7 @@ namespace FCA_Login_WebApi.Controllers
             AuthUser user = new AuthUser()
             {
                 username = "F29869D",
-                password = "Senha@2020v1"
+                password = "xxxx"
             };
 
 
@@ -141,6 +141,42 @@ namespace FCA_Login_WebApi.Controllers
 
             HttpResponseMessage response = await client.GetAsync(
                 "service/security/auth", contentString);
+
+            // return URI of the created resource.
+            return response;
+        }
+
+        [Route("verifyUserSystemAuth")]
+        [HttpGet]
+        public async Task<HttpResponseMessage> VerifyUserSystemAuth(string session_token)
+        {
+            client.BaseAddress = new Uri("http://security-master-internal.digital.fcalatam.com.br/");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+             client.DefaultRequestHeaders.Add("Authorization", session_token); 
+
+
+            HttpResponseMessage response = await client.GetAsync(
+                "service/security/userAuthority");
+
+            // return URI of the created resource.
+            return response;
+        }
+
+        [Route("getUserInformationFromToken")]
+        [HttpGet]
+        public async Task<HttpResponseMessage> GetUserInformationFromToken(string session_token)
+        {
+            client.BaseAddress = new Uri("http://security-master-internal.digital.fcalatam.com.br/");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+             client.DefaultRequestHeaders.Add("Authorization", session_token); 
+
+
+            HttpResponseMessage response = await client.GetAsync(
+                "service/security/user");
 
             // return URI of the created resource.
             return response;
