@@ -25,99 +25,7 @@ namespace FCA_Login_WebApi.Controllers
             _context = context;
         }
 
-        // GET: api/AuthUser
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<AuthUser>>> GetAuthUser()
-        {
-            return await _context.AuthUser.ToListAsync();
-        }
-
-        // GET: api/AuthUser/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<AuthUser>> GetAuthUser(int id)
-        {
-            var authUser = await _context.AuthUser.FindAsync(id);
-
-            if (authUser == null)
-            {
-                return NotFound();
-            }
-
-            return authUser;
-        }
-
-        // PUT: api/AuthUser/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutAuthUser(int id, AuthUser authUser)
-        {
-            if (id != authUser.id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(authUser).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!AuthUserExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/AuthUser
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost]
-        public async Task<ActionResult<AuthUser>> PostAuthUser(AuthUser authUser)
-        {
-            _context.AuthUser.Add(authUser);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetAuthUser", new { id = authUser.id }, authUser);
-        }
-
-        // DELETE: api/AuthUser/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<AuthUser>> DeleteAuthUser(int id)
-        {
-            var authUser = await _context.AuthUser.FindAsync(id);
-            if (authUser == null)
-            {
-                return NotFound();
-            }
-
-            _context.AuthUser.Remove(authUser);
-            await _context.SaveChangesAsync();
-
-            return authUser;
-        }
-
-        private bool AuthUserExists(int id)
-        {
-            return _context.AuthUser.Any(e => e.id == id);
-        }
-
-
-
-
-
-
-
-         // GET: api/auth
+         // GET: api/getUserInformationFromToken
         [Route("getUserInformationFromToken")]
         [HttpGet]
         public async Task<HttpResponseMessage> GetUserInformationFromToken()
@@ -140,7 +48,7 @@ namespace FCA_Login_WebApi.Controllers
 
 
             HttpResponseMessage response = await client.GetAsync(
-                "service/security/auth", contentString);
+                "service/security/auth");
 
             // return URI of the created resource.
             return response;
